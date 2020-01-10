@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url(bg.jpg);
+        }
+        center {
+            color :honeydew;
+            
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lucky 9 Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+    <br>
+    <br>
+    <script>
+        alert ("Welcome!")
+    </script>
+    <center>
+    <h1>Lucky 9 Game!</h1>
+    <h6>(Click the "Shuffle Cards" to draw 2 cards)</h6>
+    <br>
+    <h6>Good Luck!</h6>
+    <img src="back.jpg"  alt="Card 1" id="card1" width="200px" height="300px">
+    <img src="back.jpg"  alt="Card 2" id="card2" width="200px" height="300px">
+    <br>
+    <button onclick="generatecard()">Shuffle Cards</button>
+    <h1 id="description"></h1>
+    <script>
+        var card1 = 0, card2 = 0;
+        function generatecard(){
+            card1 = Math.floor((Math.random() * 13) + 1)
+            card2 = Math.floor((Math.random() * 13) + 1)
+
+            var total = 0;
+            total = card1 + card2;
+            if(total == 9) {
+                document.getElementById('description').innerHTML = "You Win!";
+            }
+            else {
+                document.getElementById('description').innerHTML = "You Lose! Better Luck Next Time!";
+            }
+
+            //CARD 1
+            if(card1 == 1) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card1").src = "ca.png";
+                } else if (type == 2) {
+                    document.getElementById("card1").src = "sa.png";
+                } else if (type == 3) {
+                    document.getElementById("card1").src = "ha.png";
+                } else {
+                    document.getElementById("card1").src = "da.png";
+                }
+            } else if (card1 == 2) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card1").src = "c2.png";
+                } else if (type == 2) {
+                    document.getElementById("card1").src = "s2.png";
+                } else if (type == 3) {
+                    document.getElementById("card1").src = "h2.png";
+                } else {
+                    document.getElementById("card1").src = "d2.png";
+                }
+            } else if (card1 == 3) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card1").src = "c3.png";
+                } else if (type == 2) {
+                    document.getElementById("card1").src = "s3.png";
+                } else if (type == 3) {
+                    document.getElementById("card1").src = "h3.png";
+                } else {
+                    document.getElementById("card1").src = "d3.png";
+                }
+            }  else if (card1 == 4) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card1").src = "c4.png";
+                } else if (type == 2) {
+                    document.getElementById("card1").src = "s4.png";
+                } else if (type == 3) {
+                    document.getElementById("card1").src = "h4.png";
+                } else {
+                    document.getElementById("card1").src = "d4.png";
+                }
+            }  else if (card1 == 5) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card1").src = "c5.png";
+                } else if (type == 2) {
+                    document.getElementById("card1").src = "s5.png";
+                } else if (type == 3) {
+                    document.getElementById("card1").src = "h5.png";
+                } else {
+                    document.getElementById("card1").src = "d5.png";
+                }
+            }  else if (card1 == 6) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card1").src = "c6.png";
+                } else if (type == 2) {
+                    document.getElementById("card1").src = "s6.png";
+                } else if (type == 3) {
+                    document.getElementById("card1").src = "h6.png";
+                } else {
+                    document.getElementById("card1").src = "d6.png";
+                }
+            }  else if (card1 == 7) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card1").src = "c7.png";
+                } else if (type == 2) {
+                    document.getElementById("card1").src = "s7.png";
+                } else if (type == 3) {
+                    document.getElementById("card1").src = "h7.png";
+                } else {
+                    document.getElementById("card1").src = "d7.png";
+                }
+            }  else if (card1 == 8) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card1").src = "c8.png";
+                } else if (type == 2) {
+                    document.getElementById("card1").src = "s8.png";
+                } else if (type == 3) {
+                    document.getElementById("card1").src = "h8.png";
+                } else {
+                    document.getElementById("card1").src = "d8.png";
+                }
+            }  else if (card1 == 9) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card1").src = "c9.png";
+                } else if (type == 2) {
+                    document.getElementById("card1").src = "s9.png";
+                } else if (type == 3) {
+                    document.getElementById("card1").src = "h9.png";
+                } else {
+                    document.getElementById("card1").src = "d9.png";
+                }
+            }  else if (card1 == 10) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card1").src = "c10.png";
+                } else if (type == 2) {
+                    document.getElementById("card1").src = "s10.png";
+                } else if (type == 3) {
+                    document.getElementById("card1").src = "h10.png";
+                } else {
+                    document.getElementById("card1").src = "d10.png";
+                }
+            }  else if (card1 == 11) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card1").src = "cj.png";
+                } else if (type == 2) {
+                    document.getElementById("card1").src = "sj.png";
+                } else if (type == 3) {
+                    document.getElementById("card1").src = "hj.png";
+                } else {
+                    document.getElementById("card1").src = "dj.png";
+                }
+            }  else if (card1 == 12) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card1").src = "cq.png";
+                } else if (type == 2) {
+                    document.getElementById("card1").src = "sq.png";
+                } else if (type == 3) {
+                    document.getElementById("card1").src = "hq.png";
+                } else {
+                    document.getElementById("card1").src = "dq.png";
+                }
+            }  else if (card1 == 13) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card1").src = "ck.png";
+                } else if (type == 2) {
+                    document.getElementById("card1").src = "sk.png";
+                } else if (type == 3) {
+                    document.getElementById("card1").src = "hk.png";
+                } else {
+                    document.getElementById("card1").src = "dk.png";
+                }
+            } else { }
+
+
+            //CARD 2
+            if(card2 == 1) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card2").src = "ca.png";
+                } else if (type == 2) {
+                    document.getElementById("card2").src = "sa.png";
+                } else if (type == 3) {
+                    document.getElementById("card2").src = "ha.png";
+                } else {
+                    document.getElementById("card2").src = "da.png";
+                }
+            } else if (card2 == 2) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card2").src = "c2.png";
+                } else if (type == 2) {
+                    document.getElementById("card2").src = "s2.png";
+                } else if (type == 3) {
+                    document.getElementById("card2").src = "h2.png";
+                } else {
+                    document.getElementById("card2").src = "d2.png";
+                }
+            } else if (card2 == 3) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card2").src = "c3.png";
+                } else if (type == 2) {
+                    document.getElementById("card2").src = "s3.png";
+                } else if (type == 3) {
+                    document.getElementById("card2").src = "h3.png";
+                } else {
+                    document.getElementById("card2").src = "d3.png";
+                }
+            }  else if (card2 == 4) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card2").src = "c4.png";
+                } else if (type == 2) {
+                    document.getElementById("card2").src = "s4.png";
+                } else if (type == 3) {
+                    document.getElementById("card2").src = "h4.png";
+                } else {
+                    document.getElementById("card2").src = "d4.png";
+                }
+            }  else if (card2 == 5) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card2").src = "c5.png";
+                } else if (type == 2) {
+                    document.getElementById("card2").src = "s5.png";
+                } else if (type == 3) {
+                    document.getElementById("card2").src = "h5.png";
+                } else {
+                    document.getElementById("card2").src = "d5.png";
+                }
+            }  else if (card2 == 6) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card2").src = "c6.png";
+                } else if (type == 2) {
+                    document.getElementById("card2").src = "s6.png";
+                } else if (type == 3) {
+                    document.getElementById("card2").src = "h6.png";
+                } else {
+                    document.getElementById("card2").src = "d6.png";
+                }
+            }  else if (card2 == 7) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card2").src = "c7.png";
+                } else if (type == 2) {
+                    document.getElementById("card2").src = "s7.png";
+                } else if (type == 3) {
+                    document.getElementById("card2").src = "h7.png";
+                } else {
+                    document.getElementById("card2").src = "d7.png";
+                }
+            }  else if (card2 == 8) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card2").src = "c8.png";
+                } else if (type == 2) {
+                    document.getElementById("card2").src = "s8.png";
+                } else if (type == 3) {
+                    document.getElementById("card2").src = "h8.png";
+                } else {
+                    document.getElementById("card2").src = "d8.png";
+                }
+            }  else if (card2 == 9) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card2").src = "c9.png";
+                } else if (type == 2) {
+                    document.getElementById("card2").src = "s9.png";
+                } else if (type == 3) {
+                    document.getElementById("card2").src = "h9.png";
+                } else {
+                    document.getElementById("card2").src = "d9.png";
+                }
+            }  else if (card2 == 10) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card2").src = "c10.png";
+                } else if (type == 2) {
+                    document.getElementById("card2").src = "s10.png";
+                } else if (type == 3) {
+                    document.getElementById("card2").src = "h10.png";
+                } else {
+                    document.getElementById("card2").src = "d10.png";
+                }
+            }  else if (card2 == 11) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card2").src = "cj.png";
+                } else if (type == 2) {
+                    document.getElementById("card2").src = "sj.png";
+                } else if (type == 3) {
+                    document.getElementById("card2").src = "hj.png";
+                } else {
+                    document.getElementById("card2").src = "dj.png";
+                }
+            }  else if (card2 == 12) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card2").src = "cq.png";
+                } else if (type == 2) {
+                    document.getElementById("card2").src = "sq.png";
+                } else if (type == 3) {
+                    document.getElementById("card2").src = "hq.png";
+                } else {
+                    document.getElementById("card2").src = "dq.png";
+                }
+            }  else if (card2 == 13) {
+                var type = Math.floor((Math.random() * 4) + 1)
+                if( type == 1) {
+                    document.getElementById("card2").src = "ck.png";
+                } else if (type == 2) {
+                    document.getElementById("card2").src = "sk.png";
+                } else if (type == 3) {
+                    document.getElementById("card2").src = "hk.png";
+                } else {
+                    document.getElementById("card2").src = "dk.png";
+                }
+            } else { }
+
+        }
+        
+    </script>
+    </center>
+</body>
+</html>
